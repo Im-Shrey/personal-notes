@@ -36,7 +36,7 @@ ALLOWED_HOSTS = os.getenv(
 ).split(",")
 
 CSRF_TRUSTED_ORIGINS = [
-    "energetic-optimism-production-6052.up.railway.app",
+    "https://energetic-optimism-production-6052.up.railway.app",
 ]
 
 # Application definition
