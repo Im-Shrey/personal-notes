@@ -32,9 +32,12 @@ DEBUG = os.getenv("DEBUG", "True") == "True"
 
 ALLOWED_HOSTS = os.getenv(
     "ALLOWED_HOSTS",
-    "*"
+    "energetic-optimism-production-6052.up.railway.app",
 ).split(",")
 
+CSRF_TRUSTED_ORIGINS = [
+    "energetic-optimism-production-6052.up.railway.app",
+]
 
 # Application definition
 
