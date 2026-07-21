@@ -37,6 +37,8 @@ ALLOWED_HOSTS = os.getenv(
 
 CSRF_TRUSTED_ORIGINS = [
     "https://energetic-optimism-production-6052.up.railway.app",
+    "https://personal-notes-app-eaca5.web.app",
+    "https://personal-notes-app-eaca5.firebaseapp.com",
 ]
 
 # Application definition
@@ -161,6 +163,6 @@ REST_FRAMEWORK = {
 }
 
 CORS_ALLOWED_ORIGINS = [
-    "https://personal-notes-app-eaca5.web.app/",
+    "https://personal-notes-app-eaca5.web.app",
     "https://personal-notes-app-eaca5.firebaseapp.com",
 ]
