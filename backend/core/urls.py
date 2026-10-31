@@ -51,7 +51,12 @@ from rest_framework_simplejwt.views import (
     TokenRefreshView,
 )
 
+def health_check(request):
+    return HttpResponse("OK")
+
 urlpatterns = [
+    path("", health_check, name="health_check"),
+    
     path("admin/", admin.site.urls),
 
     path(
